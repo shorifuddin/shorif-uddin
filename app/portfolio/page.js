@@ -6,7 +6,7 @@ import {Title} from '../site';
 const works = [
   {t: 'Lotus Food Stores', src: '/works/lotus-food-stores.png', cat: 'Mobile App', h: 'l', bg: '#f9d49c', icon: 'fa-cart-shopping', sub: 'React Native · Grocery Delivery, Sydney'},
   {t: 'RyseNova', src: '/works/rysenova.png', cat: 'Web App', h: 's', bg: '#e0c3fa', icon: 'fa-cloud', sub: 'Laravel · Cloud HR & Payroll SaaS'},
-  {t: 'ERP Systems', cat: 'Web App', h: 'm', bg: '#5ea6f5', icon: 'fa-warehouse', sub: 'Laravel · E-commerce & Hotel ERP'},
+  {t: 'ERP Systems', src: '/works/erp-systems.png', cat: 'Web App', h: 'm', bg: '#5ea6f5', icon: 'fa-warehouse', sub: 'Laravel · E-commerce & Hotel ERP'},
   {t: 'Ayers Food', src: '/works/ayers-food.png', cat: 'Web App', h: 'm', bg: '#f7d2ea', icon: 'fa-box-open', sub: 'Frozen & Dry Food Brand, Sydney'},
   {t: 'Hotel Grace Cox', src: '/works/hotel-grace-cox.png', cat: 'Web App', h: 'l', bg: '#8fe6fb', icon: 'fa-hotel', sub: 'Smart Hotel, Cox\u2019s Bazar'},
   {t: 'BIDWESH Research', src: '/works/bidwesh-research.png', cat: 'AI Research', h: 's', bg: '#f8d86a', icon: 'fa-brain', sub: 'NLP · Bangla Hate-Speech Dataset'}
