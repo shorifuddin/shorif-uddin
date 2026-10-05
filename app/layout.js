@@ -1,11 +1,70 @@
 import './globals.css';
 import AppShell from './site';
 
-export const metadata = {title: 'Md. Shorif Uddin | Software Engineer', description: 'Portfolio of Md. Shorif Uddin — Software Engineer building ERP systems, SaaS platforms and mobile apps. Published AI/NLP researcher.'};
+const SITE = 'https://shorif-uddin.vercel.app';
+const TITLE = 'Md. Shorif Uddin — Software Engineer | Laravel, React Native, TypeScript';
+const DESC =
+  'Portfolio of Md. Shorif Uddin — Software Engineer from Dhaka, Bangladesh with 4+ years of experience building ERP systems, SaaS platforms and mobile apps. Published AI/NLP researcher. Available for remote work.';
+
+export const metadata = {
+  metadataBase: new URL(SITE),
+  title: { default: TITLE, template: `%s | Md. Shorif Uddin` },
+  description: DESC,
+  keywords: [
+    'Software Engineer', 'Remote Software Engineer', 'Laravel Developer', 'PHP Developer',
+    'React Native Developer', 'TypeScript Developer', 'Vue.js Developer', 'Full-Stack Developer',
+    'Backend Developer', 'ERP Systems', 'REST API Development', 'PostgreSQL', 'MySQL',
+    'Mobile App Developer', 'Bangladesh Developer', 'Hire Remote Developer',
+  ],
+  authors: [{ name: 'Md. Shorif Uddin', url: SITE }],
+  creator: 'Md. Shorif Uddin',
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: TITLE,
+    description: DESC,
+    url: `${SITE}/home`,
+    siteName: 'Md. Shorif Uddin — Portfolio',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Md. Shorif Uddin — Software Engineer' }],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESC,
+    images: ['/og-image.jpg'],
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Md. Shorif Uddin',
+  url: `${SITE}/home`,
+  image: `${SITE}/profile.jpg`,
+  jobTitle: 'Software Engineer',
+  description: DESC,
+  email: 'mailto:shorifcoder@gmail.com',
+  address: { '@type': 'PostalAddress', addressLocality: 'Dhaka', addressCountry: 'BD' },
+  sameAs: [
+    'https://github.com/shorifuddin',
+    'https://www.linkedin.com/in/mrshorifuddin/',
+    'https://x.com/mrshorifuddin',
+    'https://www.instagram.com/mr.shorif/',
+    'https://www.facebook.com/shorifuddinbeps/',
+  ],
+  knowsAbout: [
+    'Laravel', 'PHP', 'React Native', 'TypeScript', 'React.js', 'Vue.js',
+    'PostgreSQL', 'MySQL', 'REST APIs', 'ERP Systems', 'Mobile App Development',
+    'Natural Language Processing', 'Machine Learning',
+  ],
+  seeks: { '@type': 'Demand', name: 'Remote Software Engineering roles' },
+};
 
 export default function RootLayout({children}) {
   return <html lang="en" suppressHydrationWarning>
     <head>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
       <script dangerouslySetInnerHTML={{__html: "try{if(localStorage.getItem('bostami-theme')==='dark')document.documentElement.classList.add('dark-mode')}catch(e){}"}} />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     </head>
