@@ -40,7 +40,7 @@ export function Icon({name, size = 22, sw = 1.7, style}) {
 }
 
 const nav = [
-  ['user', 'About', '/home-1'],
+  ['user', 'About', '/home'],
   ['file', 'Resume', '/resume'],
   ['briefcase', 'Works', '/portfolio'],
   ['blog', 'Blogs', '/blog'],
@@ -69,7 +69,7 @@ function ContentCard({pathname, tone, children}) {
 }
 
 export default function AppShell({children}) {
-  const pathname = usePathname() || '/home-1';
+  const pathname = usePathname() || '/home';
   const found = nav.findIndex(n => pathname.startsWith(n[2]));
   const idx = found < 0 ? 0 : found;
   const [dark, setDark] = useState(false);
