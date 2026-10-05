@@ -1,9 +1,9 @@
 import {Title, Icon} from '../site';
 
 const education = [
-  ['2022 - 2026', 'BSc in Computer Science & Engineering', ' - Southeast University,', 'Dhaka — CGPA 3.62'],
-  ['2017 - 2022', 'Diploma in Computer Technology', ' - Feni Engineering Institute,', 'Feni — CGPA 3.68'],
-  ['2016 - 2017', 'Secondary School Certificate (SSC)', ' - Feni Govt. Pilot High School,', 'Feni — GPA 4.14']
+  ['2022 - 2026', 'BSc in Computer Science & Engineering', ' - Southeast University,', 'Dhaka'],
+  ['2017 - 2022', 'Diploma in Computer Technology', ' - Feni Engineering Institute,', 'Feni'],
+  ['2016 - 2017', 'Secondary School Certificate (SSC)', ' - Feni Govt. Pilot High School,', 'Feni']
 ];
 const experience = [
   ['2022 - Present', 'Software Engineer', '', 'KuiperZ, Dhaka'],
