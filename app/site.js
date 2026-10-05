@@ -142,7 +142,7 @@ function Profile() {
     <div className="info-box">
       <Info icon="mail" cls="cyan-icon" label="Email" value={profile.email} />
       <Info icon="pin" cls="pink-icon" label="Location" value={profile.location} />
-      <Info icon="calendar" cls="purple-icon" label="Birthday" value={profile.birthday} />
+      {/* <Info icon="calendar" cls="purple-icon" label="Birthday" value={profile.birthday} /> — hidden per owner request */}
     </div>
     <a className="cv" href={profile.cv}><Icon name="download" size={15} sw={2} /> Download Cv</a>
   </aside>;
