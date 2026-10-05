@@ -134,9 +134,9 @@ function Profile() {
     <h1>{profile.name}</h1>
     <div className="role-pill">{profile.role}</div>
     <div className="social">
-      <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f" /></a>
-      <a href="#" aria-label="Twitter"><i className="fab fa-twitter" /></a>
-      <a href="#" aria-label="Instagram"><i className="fab fa-instagram" /></a>
+      <a href="https://www.facebook.com/shorifuddinbeps/" target="_blank" rel="noreferrer" aria-label="Facebook"><i className="fab fa-facebook-f" /></a>
+      <a href="https://x.com/mrshorifuddin" target="_blank" rel="noreferrer" aria-label="X"><i className="fab fa-x-twitter" /></a>
+      <a href="https://www.instagram.com/mr.shorif/" target="_blank" rel="noreferrer" aria-label="Instagram"><i className="fab fa-instagram" /></a>
       <a href="https://www.linkedin.com/in/mrshorifuddin/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i className="fab fa-linkedin-in" /></a>
     </div>
     <div className="info-box">
