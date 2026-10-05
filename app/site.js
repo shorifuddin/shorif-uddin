@@ -63,7 +63,7 @@ function ContentCard({pathname, tone, children}) {
   return <section className="content-card" style={h != null ? {height: h} : undefined}>
     <div ref={inner}>
       <div key={pathname} className="page-enter">{children}</div>
-      <footer className={'site-footer ' + tone}>© 2026 All Rights Reserved by {profile.copyright}.</footer>
+      <footer className={'site-footer ' + tone}>© 2026 All Rights Reserved by {profile.copyright}. <a href="https://mdshorifuddin.vercel.app/" target="_blank" rel="noreferrer">View the new version ↗</a></footer>
     </div>
   </section>;
 }

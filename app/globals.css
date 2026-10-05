@@ -84,6 +84,7 @@ a,button,input,textarea{font:inherit}
 .logo{flex:1;display:grid;place-items:center}
 .logo svg{width:112px;height:auto;max-width:100%;animation:pageIn .5s ease both}
 .site-footer{text-align:center;color:var(--text);font-size:12.5px;padding:23px 10px;background:var(--card)}
+.site-footer a{color:var(--blue);font-weight:600}
 .site-footer.gray{background:var(--band)}
 
 /* ---------- Resume ---------- */
