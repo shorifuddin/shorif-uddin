@@ -22,6 +22,6 @@ export default function Home() {
           </article>)}
       </div>
     </div>
-    <Clients />
+    {/* <Clients /> — client logos section hidden per owner request */}
   </>;
 }
