@@ -9,7 +9,7 @@ export const experience = [
   ['Aug 2022 - Present', 'Software Engineer', '', 'KuiperZ, Dhaka'],
   ['Feb 2022 - Jul 2022', 'Software Developer', '', 'Bdcalling IT Ltd, Dhaka']
 ];
-export const skills = [['Laravel', 92, '#ed6e69', 'laravel'], ['PHP', 90, '#8d73ce', 'php'], ['MySQL', 88, '#5d84ce', 'mysql'], ['React Native', 85, '#bc5dea', 'react'], ['React.js', 84, '#ed6e69', 'react'], ['TypeScript', 80, '#5d84ce', 'typescript']];
+export const skills = [['Laravel', 92, '#ed6e69', 'laravel'], ['PHP', 90, '#8d73ce', 'php'], ['MySQL', 88, '#5d84ce', 'mysql'], ['Vue.js', 85, '#4FC08D', 'vuedotjs'], ['React.js', 84, '#ed6e69', 'react'], ['TypeScript', 80, '#5d84ce', 'typescript']];
 export const knowledges = ['RESTful APIs', 'ERP Systems', 'Mobile App Development', 'Database Design', 'Eloquent ORM', 'NLP', 'LLMs', 'Bangla NLP', 'Testing & Debugging', 'Performance Tuning', 'Agile', 'Problem Solving'];
 
 function Column({icon, title, items, col}) {
