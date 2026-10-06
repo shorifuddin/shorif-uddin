@@ -1,4 +1,5 @@
 import {Title, Icon, Clients} from '../site';
+import {experience, knowledges} from '../resume/page';
 
 const services = [
   ['code', 'Web Development', '#3b8cf0', 'pink', 'Scalable web platforms with Laravel, React, Vue.js and TypeScript — RESTful APIs, ERP modules and cloud SaaS products.'],
@@ -28,6 +29,19 @@ export default function Home() {
             <Icon name={icon} size={35} sw={1.4} style={{color, flex: 'none'}} />
             <div><h3>{title}</h3><p>{desc}</p></div>
           </article>)}
+      </div>
+      <h3 className="what-title">Experience</h3>
+      <div className="about-timeline">
+        {experience.map(([date, name, , sub]) =>
+          <div className="about-exp" key={name}>
+            <span className="date">{date}</span>
+            <h4>{name}</h4>
+            <p>{sub}</p>
+          </div>)}
+      </div>
+      <h3 className="what-title">Knowledges</h3>
+      <div className="know-cloud">
+        {knowledges.map(k => <span key={k}>{k}</span>)}
       </div>
     </div>
     {/* <Clients /> — client logos section hidden per owner request */}

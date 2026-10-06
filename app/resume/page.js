@@ -5,12 +5,12 @@ const education = [
   ['2017 - 2022', 'Diploma in Computer Technology', ' - Feni Engineering Institute,', 'Feni'],
   ['2016 - 2017', 'Secondary School Certificate (SSC)', ' - Feni Govt. Pilot High School,', 'Feni']
 ];
-const experience = [
+export const experience = [
   ['2022 - Present', 'Software Engineer', '', 'KuiperZ, Dhaka'],
   ['2022', 'Software Developer', '', 'Bdcalling IT Ltd, Dhaka']
 ];
 const skills = [['Laravel', 92, '#ed6e69'], ['PHP', 90, '#8d73ce'], ['MySQL', 88, '#5d84ce'], ['React Native', 85, '#bc5dea'], ['React.js', 84, '#ed6e69'], ['TypeScript', 80, '#5d84ce']];
-const knowledges = ['RESTful APIs', 'ERP Systems', 'Mobile App Development', 'Database Design', 'Eloquent ORM', 'NLP', 'LLMs', 'Bangla NLP', 'Testing & Debugging', 'Performance Tuning', 'Agile', 'Problem Solving'];
+export const knowledges = ['RESTful APIs', 'ERP Systems', 'Mobile App Development', 'Database Design', 'Eloquent ORM', 'NLP', 'LLMs', 'Bangla NLP', 'Testing & Debugging', 'Performance Tuning', 'Agile', 'Problem Solving'];
 
 function Column({icon, title, items, col}) {
   return <div>

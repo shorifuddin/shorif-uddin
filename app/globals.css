@@ -47,6 +47,18 @@ a,button,input,textarea{font:inherit}
 .research-links span{font-size:13px;font-weight:600}
 .research-links a{padding:7px 15px;border-radius:20px;background:var(--tile);font-size:13px;font-weight:500;text-decoration:none;color:var(--ink)}
 .research-links a:hover{background:#3b8cf0;color:#fff}
+/* ---------- About page: experience timeline + knowledges cloud (distinct styles) ---------- */
+.about-timeline{position:relative;margin:16px 0 6px;padding-left:30px}
+.about-timeline::before{content:'';position:absolute;left:9px;top:8px;bottom:8px;width:2px;border-radius:2px;background:linear-gradient(180deg,var(--blue),#c75cf6)}
+.about-exp{position:relative;padding-bottom:22px}
+.about-exp:last-child{padding-bottom:4px}
+.about-exp::before{content:'';position:absolute;left:-29px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--card);border:3px solid var(--blue)}
+.about-exp .date{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--blue);background:var(--blue-soft);padding:4px 13px;border-radius:20px;margin-bottom:8px}
+.about-exp h4{margin:0 0 4px;font-size:16px;color:var(--ink)}
+.about-exp p{margin:0;color:var(--muted);font-size:13.5px}
+.know-cloud{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px}
+.know-cloud span{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1.5px solid var(--line);border-radius:24px;font-size:13px;font-weight:500;color:var(--ink);background:var(--card)}
+.know-cloud span::before{content:'';width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--blue),#c75cf6);flex:none}
 .info-box{background:var(--tile);border-radius:14px;padding:14px 22px;margin-bottom:26px;text-align:left}
 .info-row{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}
 .info-row:last-child{border-bottom:0}
