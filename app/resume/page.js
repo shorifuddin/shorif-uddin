@@ -3,7 +3,7 @@ import {Title, Icon} from '../site';
 const education = [
   ['2022 - 2026', 'BSc in Computer Science & Engineering', 'Southeast University', 'Dhaka'],
   ['2017 - 2022', 'Diploma in Computer Technology', 'Feni Engineering Institute', 'Feni'],
-  ['2016 - 2017', 'Secondary School Certificate (SSC)', ' - Feni Govt. Pilot High School,', 'Feni']
+  ['2016 - 2017', 'Secondary School Certificate (SSC)', 'Feni Govt. Pilot High School', 'Feni']
 ];
 export const experience = [
   ['Aug 2022 - Present', 'Software Engineer', 'KuiperZ, Dhaka', [
