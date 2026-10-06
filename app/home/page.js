@@ -1,12 +1,5 @@
 import {Title, Icon, Clients} from '../site';
-import {experience, knowledges} from '../resume/page';
-
-const highlights = [
-  ['briefcase', 'ERP Development', 'Large-scale ERP for e-commerce & hotels — inventory, invoicing, HR, attendance, logistics.'],
-  ['code', 'API Development', 'REST APIs powering web platforms, SaaS products and mobile apps.'],
-  ['group', 'Mobile App Development', 'Lotus Food Stores grocery delivery app — live on Google Play with real-time order tracking.'],
-  ['contact', 'HR & Payroll SaaS', 'RyseNova modules — employee management, leave workflows, payroll processing.'],
-];
+import {experience, skills} from '../resume/page';
 
 const services = [
   ['code', 'Web Development', '#3b8cf0', 'pink', 'Scalable web platforms with Laravel, React, Vue.js and TypeScript — RESTful APIs, ERP modules and cloud SaaS products.'],
@@ -37,7 +30,7 @@ export default function Home() {
             <div><h3>{title}</h3><p>{desc}</p></div>
           </article>)}
       </div>
-      <h3 className="what-title">Experience</h3>
+      <h3 className="what-title">Experience & Skills</h3>
       <div className="exp-grid">
         <div className="about-timeline">
           {experience.map(([date, name, , sub]) =>
@@ -47,18 +40,16 @@ export default function Home() {
               <p>{sub}</p>
             </div>)}
         </div>
-        <div className="exp-highlights">
-          <h4 className="hl-title">Key Responsibilities</h4>
-          {highlights.map(([icon, title, desc]) =>
-            <div className="exp-hl" key={title}>
-              <span className="exp-hl-icon"><Icon name={icon} size={20} sw={1.6} /></span>
-              <div><b>{title}</b><p>{desc}</p></div>
+        <div className="about-skills">
+          {skills.map(([n, v, c, logo]) =>
+            <div className="about-skill" key={n}>
+              <img src={'/skills/' + logo + '.svg'} alt={n} loading="lazy" />
+              <div className="about-skill-body">
+                <div className="about-skill-top"><b>{n}</b><span>{v}%</span></div>
+                <div className="bar"><i style={{width: v + '%', background: c}} /></div>
+              </div>
             </div>)}
         </div>
-      </div>
-      <h3 className="what-title">Knowledges</h3>
-      <div className="know-cloud">
-        {knowledges.map(k => <span key={k}>{k}</span>)}
       </div>
     </div>
     {/* <Clients /> — client logos section hidden per owner request */}
