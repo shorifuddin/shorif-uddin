@@ -43,6 +43,10 @@ a,button,input,textarea{font:inherit}
 .social{display:flex;justify-content:center;gap:10px;margin:16px 0 24px}
 .social a{width:34px;height:34px;border-radius:6px;background:var(--tile);display:grid;place-items:center;text-decoration:none;font-size:14px}
 .social a:nth-child(1){color:#1877f2}.social a:nth-child(2){color:#1da1f2}.social a:nth-child(3){color:#e94078}.social a:nth-child(4){color:#0a66c2}
+.research-links{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0 6px}
+.research-links span{font-size:13px;font-weight:600}
+.research-links a{padding:7px 15px;border-radius:20px;background:var(--tile);font-size:13px;font-weight:500;text-decoration:none;color:var(--ink)}
+.research-links a:hover{background:#3b8cf0;color:#fff}
 .info-box{background:var(--tile);border-radius:14px;padding:14px 22px;margin-bottom:26px;text-align:left}
 .info-row{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}
 .info-row:last-child{border-bottom:0}

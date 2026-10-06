@@ -13,6 +13,14 @@ export default function Home() {
       <Title>About</Title>
       <p>I'm a Software Engineer from Dhaka, Bangladesh with 4+ years of experience building software that runs real businesses — large-scale ERP systems, cloud SaaS platforms and mobile apps used by real customers every day.</p>
       <p>My stack is PHP (Laravel), React, TypeScript, React Native, Vue.js, MySQL and PostgreSQL. I'm also a published AI/NLP researcher with an IEEE conference paper on Bangla healthcare paraphrasing and the BIDWESH Bangla hate-speech detection dataset.</p>
+      <div className="research-links">
+        <span>Research profiles:</span>
+        <a href="https://scholar.google.com/citations?user=7HQvzWkAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+        <a href="https://orcid.org/0009-0000-9444-024X" target="_blank" rel="noreferrer">ORCID</a>
+        <a href="https://www.researchgate.net/profile/Md-Uddin-253" target="_blank" rel="noreferrer">ResearchGate</a>
+        <a href="https://ieeexplore.ieee.org/author/714440223929229" target="_blank" rel="noreferrer">IEEE Xplore</a>
+        <a href="https://www.semanticscholar.org/author/MD.-Shorif-Uddin/2364700811" target="_blank" rel="noreferrer">Semantic Scholar</a>
+      </div>
       <h3 className="what-title">What I Do!</h3>
       <div className="services">
         {services.map(([icon, title, color, tone, desc]) =>
