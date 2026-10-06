@@ -41,13 +41,10 @@ export default function Home() {
             </div>)}
         </div>
         <div className="about-skills">
-          {skills.map(([n, v, c, logo]) =>
+          {skills.map(([n, , , logo]) =>
             <div className="about-skill" key={n}>
               <img src={'/skills/' + logo + '.svg'} alt={n} loading="lazy" />
-              <div className="about-skill-body">
-                <div className="about-skill-top"><b>{n}</b><span>{v}%</span></div>
-                <div className="bar"><i style={{width: v + '%', background: c}} /></div>
-              </div>
+              <b>{n}</b>
             </div>)}
         </div>
       </div>
