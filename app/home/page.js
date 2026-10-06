@@ -30,18 +30,20 @@ export default function Home() {
             <div><h3>{title}</h3><p>{desc}</p></div>
           </article>)}
       </div>
-      <h3 className="what-title">Experience</h3>
       <div className="exp-grid">
-        <div className="about-timeline">
+        <div>
+          <h3 className="what-title">Experience</h3>
+          <div className="about-timeline">
           {experience.map(([date, name, , sub]) =>
             <div className="about-exp" key={name}>
               <span className="date">{date}</span>
               <h4>{name}</h4>
               <p>{sub}</p>
             </div>)}
+          </div>
         </div>
         <div>
-          <h4 className="col-sub">Skills</h4>
+          <h3 className="what-title">Skills</h3>
           <div className="about-skills-grid">
           {skills.map(([n, , , logo]) =>
             <div className="about-skill" key={n}>
