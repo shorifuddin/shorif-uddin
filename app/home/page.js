@@ -1,6 +1,13 @@
 import {Title, Icon, Clients} from '../site';
 import {experience, knowledges} from '../resume/page';
 
+const highlights = [
+  ['briefcase', '4+ Years Experience', 'Shipping production software used by real customers every day.'],
+  ['code', 'ERP & SaaS Systems', 'Large-scale ERP for e-commerce & hotels, cloud HR and payroll platforms.'],
+  ['group', 'Mobile Apps', 'React Native apps in production, live on Google Play.'],
+  ['cap', 'Published Researcher', 'IEEE ICCIT 2025 paper and the BIDWESH hate-speech dataset.'],
+];
+
 const services = [
   ['code', 'Web Development', '#3b8cf0', 'pink', 'Scalable web platforms with Laravel, React, Vue.js and TypeScript — RESTful APIs, ERP modules and cloud SaaS products.'],
   ['group', 'App Development', '#e0a42b', 'blue', 'React Native mobile apps in production, including a grocery delivery app live on Google Play with real-time tracking and rewards.'],
@@ -31,13 +38,22 @@ export default function Home() {
           </article>)}
       </div>
       <h3 className="what-title">Experience</h3>
-      <div className="about-timeline">
-        {experience.map(([date, name, , sub]) =>
-          <div className="about-exp" key={name}>
-            <span className="date">{date}</span>
-            <h4>{name}</h4>
-            <p>{sub}</p>
-          </div>)}
+      <div className="exp-grid">
+        <div className="about-timeline">
+          {experience.map(([date, name, , sub]) =>
+            <div className="about-exp" key={name}>
+              <span className="date">{date}</span>
+              <h4>{name}</h4>
+              <p>{sub}</p>
+            </div>)}
+        </div>
+        <div className="exp-highlights">
+          {highlights.map(([icon, title, desc]) =>
+            <div className="exp-hl" key={title}>
+              <span className="exp-hl-icon"><Icon name={icon} size={20} sw={1.6} /></span>
+              <div><b>{title}</b><p>{desc}</p></div>
+            </div>)}
+        </div>
       </div>
       <h3 className="what-title">Knowledges</h3>
       <div className="know-cloud">
