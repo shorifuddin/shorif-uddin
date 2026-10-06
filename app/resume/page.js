@@ -1,8 +1,8 @@
 import {Title, Icon} from '../site';
 
 const education = [
-  ['2022 - 2026', 'BSc in Computer Science & Engineering', ' - Southeast University,', 'Dhaka'],
-  ['2017 - 2022', 'Diploma in Computer Technology', ' - Feni Engineering Institute,', 'Feni'],
+  ['2022 - 2026', 'BSc in Computer Science & Engineering', 'Southeast University', 'Dhaka'],
+  ['2017 - 2022', 'Diploma in Computer Technology', 'Feni Engineering Institute', 'Feni'],
   ['2016 - 2017', 'Secondary School Certificate (SSC)', ' - Feni Govt. Pilot High School,', 'Feni']
 ];
 export const experience = [
@@ -26,7 +26,7 @@ function Column({icon, title, items, col}) {
     {items.map(([date, name, rest, sub], i) =>
       <div className={'resume-item ' + ((col + i) % 2 === 0 ? 'pink' : 'blue')} key={name}>
         <small>{date}</small>
-        <h4>{name}<span>{rest}</span></h4>
+        <h4>{name}{rest ? <span> - {rest}</span> : null}</h4>
         {Array.isArray(sub)
           ? <ul className="resp">{sub.map((b, j) => <li key={j}>{b}</li>)}</ul>
           : <p>{sub}</p>}
