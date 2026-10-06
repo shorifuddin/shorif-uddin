@@ -34,11 +34,11 @@ export default function Home() {
         <div>
           <h3 className="what-title">Experience</h3>
           <div className="about-timeline">
-          {experience.map(([date, name, , sub]) =>
+          {experience.map(([date, name, company]) =>
             <div className="about-exp" key={name}>
               <span className="date">{date}</span>
               <h4>{name}</h4>
-              <p>{sub}</p>
+              <p>{company}</p>
             </div>)}
           </div>
         </div>

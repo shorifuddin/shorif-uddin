@@ -6,8 +6,16 @@ const education = [
   ['2016 - 2017', 'Secondary School Certificate (SSC)', ' - Feni Govt. Pilot High School,', 'Feni']
 ];
 export const experience = [
-  ['Aug 2022 - Present', 'Software Engineer', '', 'KuiperZ, Dhaka'],
-  ['Feb 2022 - Jul 2022', 'Software Developer', '', 'Bdcalling IT Ltd, Dhaka']
+  ['Aug 2022 - Present', 'Software Engineer', 'KuiperZ, Dhaka', [
+    'Designed & developed large-scale ERP systems for e-commerce and hotel management — inventory, invoicing, HR, attendance, logistics.',
+    'Built & launched Lotus Food Stores, a grocery delivery app on Google Play (Sydney) — referral bonuses, coin rewards, real-time order tracking.',
+    'Developed RyseNova, a cloud HR & Payroll platform — employee management, attendance & leave, payroll processing.',
+  ]],
+  ['Feb 2022 - Jul 2022', 'Software Developer', 'Bdcalling IT Ltd, Dhaka', [
+    'Installed and configured WordPress environments for client websites.',
+    'Customised themes and plugins based on specific business requirements.',
+    'Maintained frontend and backend of WordPress-based applications.',
+  ]],
 ];
 export const skills = [['Laravel', 92, '#ed6e69', 'laravel'], ['PHP', 90, '#8d73ce', 'php'], ['PostgreSQL', 88, '#4169E1', 'postgresql'], ['Vue.js', 85, '#4FC08D', 'vuedotjs'], ['React.js', 84, '#ed6e69', 'react'], ['TypeScript', 80, '#5d84ce', 'typescript']];
 export const knowledges = ['RESTful APIs', 'ERP Systems', 'Mobile App Development', 'Database Design', 'Eloquent ORM', 'NLP', 'LLMs', 'Bangla NLP', 'Testing & Debugging', 'Performance Tuning', 'Agile', 'Problem Solving'];
@@ -19,7 +27,9 @@ function Column({icon, title, items, col}) {
       <div className={'resume-item ' + ((col + i) % 2 === 0 ? 'pink' : 'blue')} key={name}>
         <small>{date}</small>
         <h4>{name}<span>{rest}</span></h4>
-        <p>{sub}</p>
+        {Array.isArray(sub)
+          ? <ul className="resp">{sub.map((b, j) => <li key={j}>{b}</li>)}</ul>
+          : <p>{sub}</p>}
       </div>)}
   </div>;
 }
