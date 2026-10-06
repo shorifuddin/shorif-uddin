@@ -11,7 +11,7 @@ export const profile = {
   initials: 'SU',
   photo: '/profile.jpg',          // put your photo at public/profile.jpg
   email: 'shorifcoder@gmail.com',
-  location: 'Nikunja-2, Dhaka, Bangladesh',
+  location: 'Dhaka, Bangladesh',
   birthday: '—',
   cv: '/Shorif_Uddin_CV.pdf',
   copyright: 'Md. Shorif Uddin'
