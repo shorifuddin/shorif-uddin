@@ -30,7 +30,7 @@ export default function Home() {
             <div><h3>{title}</h3><p>{desc}</p></div>
           </article>)}
       </div>
-      <h3 className="what-title">Experience & Skills</h3>
+      <h3 className="what-title">Experience</h3>
       <div className="exp-grid">
         <div className="about-timeline">
           {experience.map(([date, name, , sub]) =>
@@ -40,12 +40,15 @@ export default function Home() {
               <p>{sub}</p>
             </div>)}
         </div>
-        <div className="about-skills">
+        <div>
+          <h4 className="col-sub">Skills</h4>
+          <div className="about-skills-grid">
           {skills.map(([n, , , logo]) =>
             <div className="about-skill" key={n}>
               <img src={'/skills/' + logo + '.svg'} alt={n} loading="lazy" />
               <b>{n}</b>
             </div>)}
+          </div>
         </div>
       </div>
     </div>
