@@ -2,10 +2,10 @@ import {Title, Icon, Clients} from '../site';
 import {experience, knowledges} from '../resume/page';
 
 const highlights = [
-  ['briefcase', '4+ Years Experience', 'Shipping production software used by real customers every day.'],
-  ['code', 'ERP & SaaS Systems', 'Large-scale ERP for e-commerce & hotels, cloud HR and payroll platforms.'],
-  ['group', 'Mobile Apps', 'React Native apps in production, live on Google Play.'],
-  ['cap', 'Published Researcher', 'IEEE ICCIT 2025 paper and the BIDWESH hate-speech dataset.'],
+  ['briefcase', 'ERP Development', 'Large-scale ERP for e-commerce & hotels — inventory, invoicing, HR, attendance, logistics.'],
+  ['code', 'API Development', 'REST APIs powering web platforms, SaaS products and mobile apps.'],
+  ['group', 'Mobile App Development', 'Lotus Food Stores grocery delivery app — live on Google Play with real-time order tracking.'],
+  ['contact', 'HR & Payroll SaaS', 'RyseNova modules — employee management, leave workflows, payroll processing.'],
 ];
 
 const services = [
@@ -48,6 +48,7 @@ export default function Home() {
             </div>)}
         </div>
         <div className="exp-highlights">
+          <h4 className="hl-title">Key Responsibilities</h4>
           {highlights.map(([icon, title, desc]) =>
             <div className="exp-hl" key={title}>
               <span className="exp-hl-icon"><Icon name={icon} size={20} sw={1.6} /></span>
