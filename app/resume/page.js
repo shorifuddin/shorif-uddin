@@ -1,5 +1,10 @@
 import {Title, Icon} from '../site';
 
+export const metadata = {
+  title: 'Resume',
+  description: 'Resume of Md. Shorif Uddin — Software Engineer from Dhaka, Bangladesh. 4+ years building ERP systems, SaaS platforms and mobile apps with Laravel, React Native, TypeScript and PostgreSQL.',
+};
+
 const education = [
   ['2022 - 2026', 'BSc in Computer Science & Engineering', 'Southeast University', 'Dhaka'],
   ['2017 - 2022', 'Diploma in Computer Technology', 'Feni Engineering Institute', 'Feni'],

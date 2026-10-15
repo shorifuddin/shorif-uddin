@@ -1,5 +1,10 @@
 import {Title} from '../site';
 
+export const metadata = {
+  title: 'Contact',
+  description: 'Contact Md. Shorif Uddin — Software Engineer open to remote roles. Get in touch about Laravel, React Native and TypeScript engineering.',
+};
+
 export default function Contact() {
   return <>
     <div className="content-section">
