@@ -4,7 +4,7 @@ import AppShell from './site';
 const SITE = 'https://shorif-uddin.vercel.app';
 const TITLE = 'Md. Shorif Uddin — Software Engineer | Laravel, React Native, TypeScript';
 const DESC =
-  'Portfolio of Md. Shorif Uddin — Software Engineer from Dhaka, Bangladesh with 4+ years of experience building ERP systems, SaaS platforms and mobile apps. Published AI/NLP researcher. Available for remote work.';
+  'Portfolio of Md. Shorif Uddin — Software Engineer from Dhaka, Bangladesh with 4+ years of experience building ERP systems, SaaS platforms and mobile apps. Published AI/NLP researcher. Available for remote work. Open to remote roles with software companies in Wales and across the UK.';
 
 export const metadata = {
   metadataBase: new URL(SITE),
@@ -15,6 +15,8 @@ export const metadata = {
     'React Native Developer', 'TypeScript Developer', 'Vue.js Developer', 'Full-Stack Developer',
     'Backend Developer', 'ERP Systems', 'REST API Development', 'PostgreSQL', 'MySQL',
     'Mobile App Developer', 'Bangladesh Developer', 'Hire Remote Developer',
+    'Software Engineer Wales', 'Remote Software Engineer UK', 'Laravel Developer UK',
+    'Remote Developer Wales', 'Hire Software Engineer Wales',
   ],
   authors: [{ name: 'Md. Shorif Uddin', url: SITE }],
   creator: 'Md. Shorif Uddin',

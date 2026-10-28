@@ -12,7 +12,7 @@ export default function Home() {
   return <>
     <div className="content-section">
       <Title>About</Title>
-      <p>I'm a Software Engineer from Dhaka, Bangladesh with 4+ years of experience building software that runs real businesses — large-scale ERP systems, cloud SaaS platforms and mobile apps used by real customers every day.</p>
+      <p>I'm a Software Engineer from Dhaka, Bangladesh with 4+ years of experience building software that runs real businesses — large-scale ERP systems, cloud SaaS platforms and mobile apps used by real customers every day. I'm open to remote roles with software companies in Wales and across the UK.</p>
       <p>My stack is PHP (Laravel), React, TypeScript, React Native, Vue.js, MySQL and PostgreSQL. I'm also a published AI/NLP researcher with an IEEE conference paper on Bangla healthcare paraphrasing and the BIDWESH Bangla hate-speech detection dataset.</p>
       <div className="research-links">
         <span>Research profiles:</span>
